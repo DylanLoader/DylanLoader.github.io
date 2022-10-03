@@ -8,3 +8,5 @@ title = 'Personal Profile'
 author = 'DylanLoader'
 description = 'Random ramblings from research and fields of interest'
 
+profilePicture = "themes/hugo-profile/images/profile-picture.png"
+mainSection = ["blogs"]
