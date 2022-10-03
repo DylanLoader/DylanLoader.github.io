@@ -1,0 +1,10 @@
+baseURL = 'https://DylanLoader.github.io/'
+languageCode = 'en-us'
+theme = 'hugo-profile'
+enableEmoji = true
+
+[params]
+title = 'Personal Profile'
+author = 'DylanLoader'
+description = 'Random ramblings from research and fields of interest'
+
