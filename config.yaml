@@ -23,7 +23,7 @@ Menus:
       title: Blog posts
       url: /gallery
       weight: 2
-      
+
     #Dropdown menu
     # - identifier: dropdown
     #   title: Example dropdown menu
@@ -45,7 +45,7 @@ Menus:
 params:
   title: "Research and Ramblings"
   description: A site for my public research and blog posts.
-  # staticPath: ""  # The path to serve the static files from
+  # staticPath: "static/images/"  # The path to serve the static files from
   favicon: "fav.svg"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
