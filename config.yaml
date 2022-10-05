@@ -1,0 +1,303 @@
+baseURL: "https://DylanLoader.github.io"
+languageCode: "en-us"
+title: "Hugo Profile"
+theme: hugo-profile
+
+Paginate: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+
+    # - identifier: gallery
+    #   name: Gallery
+    #   title: Blog posts
+    #   url: /gallery
+    #   weight: 2
+
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "My Portfolio Site"
+  description: Research and Ramblings
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    disableThemeToggle: false
+    defaultTheme: "light" # dark
+
+  # font:
+  #   fontSize: 1.5rem # default: 1rem
+  #   fontWeight: 500 # default: 400
+  #   lineHeight: 1 # default: 1.5
+  #   textAlign: right # default: left
+
+
+
+  # color preference
+  color:
+    textColor: "#1C3879"
+    secondaryTextColor: "#607EAA"
+    backgroundColor: "#F9F5EB"
+    secondaryBackgroundColor: "#607EAA"
+    primaryColor: "#607EAA"
+    secondaryColor: "#EAE3D2"
+
+  darkmode:
+    textColor: "#00A8CC"
+    secondaryTextColor: "#0C7B93"
+    backgroundColor: "#142850"
+    secondaryBackgroundColor: "#27496D"
+    primaryColor: "#142850"
+    secondaryColor: "#27496D"
+
+  # If you want to customize the menu, you can change it here
+  # navbar:
+  #   align: mx-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+  #   brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+  #   brandName: "Profile" # Brand name for the brand | default is the title variable
+
+  #   menus:
+  #     disableAbout: true
+  #     disableExperience: true
+  #     disableEducation: true
+  #     disableProjects: true
+  #     disableAchievements: true
+  #     disableContact: true
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Dylan."
+    subtitle: "Machine Learning Research for Finance"
+    # content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
+    # image: /images/hero.svg
+    button:
+      enable: true
+      name: "Resume"
+      url: "#"
+      download: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://example.com
+        # - icon: fab fa-twitter
+        #   url: https://example.com
+        - icon: fas fa-envelope
+          url: mailto:dylan.loader1@ucalgary.ca
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    # image: "/images/me.png"
+    content: |-
+      TODO  
+    skills:
+      enable: true
+      title: "Here are some of the software applications and frameworks work with or have worked with:"
+      items:
+        - "Python3"
+        - "Postgres"
+        - "R"
+        - "Tensorflow"
+        - "Keras"
+        - "Pytorch"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Associate Machine Learning Developer"
+        company: "ATB / AltaML"
+        companyUrl: "https://www.atb.com/personal/"
+        date: "Jul 2021 - Sept 2021"
+        info:
+          enable: false
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        content: |        
+          Built Clustering pipelines for down-stream tasks to improve customer segementation implementations
+
+      - job: "Graduate Teaching Assistant (Data Science)"
+        company: "University of Calgary"
+        companyUrl: "https://science.ucalgary.ca/data-science"
+        date: "Sep 2019 - Dec 2019"
+        info:
+          enable: false
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        content: | 
+          Give tutorials on how to use R for Data
+
+      - job: "Junior Data Scientist"
+        company: "Viewpoint Investment Partners"
+        companyUrl: "https://viewpointinvestment.ca/"
+        date: "Apr 2019 - Sep 2019"
+        info:
+          enable: false
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        content: |
+          Did research on methodologies for building Risk Parity based portfolios
+
+      - job: "Research Assistant (Statistics)"
+        company: "University of Calgary"
+        companyUrl: "https://science.ucalgary.ca/data-science"
+        date: "Apr 2018 - Sep 2018"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        content: |
+          Helped write R based code for data generation using Data Cloning and reduced run time of the existing code implementation
+
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    # index: true
+    items:
+      - title: "Master of Science Statistics"
+        school:
+          name: "University of Calgary"
+          url: "https://ucalgary.ca"
+        date: "Expected Graduation April 2023"
+        content: |-
+          Thesis topic: Graph Approaches to Financial Fraud Detection
+      - title: "Bachelor of Science in Statistics"
+        school:
+          name: "University of Calgary"
+          url: "https://ucalgary.ca/"
+        date: "Graduated 2019"
+        content: |-
+          Majored in Statistics, minored in Data Science. 
+      - title: "Bachelor of Science in Mathematics"
+        school:
+          name: "MacEwan University"
+          url: "https://www.macewan.ca/home/"
+        date: "Graduated 2016"
+        content: |-
+          Majored in Mathmatics with senior couse in Topology and Group theory. Minored in Economics. 
+
+  # Achievements
+  # achievements:
+  #   enable: true
+  #   # title: "Custom Name"
+  #   items:
+  #     - title: Google kickstart runner
+  #       content: I solved all problems with optimal solution.
+  #       url: https://example.com
+  #     - title: Facebook Hackathon Winner
+  #       content: Developed a product using Artificial Intelligence.
+  #     - title: Hugo Profile
+  #       content: Developed a theme and getting 1K+ downloads per month.
+  #       url: "https://github.com/gurusabarish/hugo-profile"
+  #     - title: Microsoft Imagine Runner
+  #       content: We are developed a product which can help others.
+  #     - title: Google Summer of Code
+  #       content: Contributed to a open source project.
+  #       url: https://example.com
+
+  # projects
+  # projects:
+  #   enable: true
+  #   # title: "Custom Name"
+  #   items:
+  #     - title: Hugo Profile
+  #       content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+  #       image: /images/projects/profile.png
+  #       featured:
+  #         name: Demo
+  #         link: https://hugo-profile.netlify.app
+  #       # badges:
+  #       #   - "Hugo"
+  #       #   - "Bootstrap"
+  #       #   - "Javascript"
+  #       links:
+  #         - icon: fa fa-envelope
+  #           url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+  #         - icon: fab fa-github
+  #           url: https://github.com/gurusabarish/hugo-profile
+  #         - icon: fab fa-twitter
+  #           url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+  #     - title: Image Converter
+  #       content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+  #       image: /images/projects/converter.jpg
+  #       featured:
+  #         name: Demo
+  #         link: https://django-converter.herokuapp.com
+  #       # badges:
+  #       #   - "Django"
+  #       #   - "Bootstrap"
+  #       links:
+  #         - icon: fab fa-github
+  #           url: https://github.com/gurusabarish/converter
+
+  #     - title: Hugo Profile V2
+  #       content: A clean and simple Hugo template for personal portfolio and blog.
+  #       image: /images/projects/profile2.jpg
+  #       featured:
+  #         name: Demo V2
+  #         link: https://hugo-profile-2.netlify.app
+  #       # badges:
+  #       #   - "Hugo"
+  #       #   - "Bootstrap"
+  #       #   - "Javascript"
+  #       links:
+  #         - icon: fab fa-github
+  #           url: https://github.com/gurusabarish/HugoProfileV2
+
+  #Contact
+  contact:
+    enable: true
+    #title: "Custom name"
+    content: If you have a question, comment, or suggestion about something on the site, please email me!
+    email: dylan.loader1@ucalgary.ca
+    btnName: Email me
+
+  footer:
+    # recentPosts: false
+    socialNetworks:
+      github: https://github.com/DylanLoader
+      linkedin: https://www.linkedin.com/in/dylan-loader/
