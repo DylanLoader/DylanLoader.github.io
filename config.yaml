@@ -43,9 +43,9 @@ Menus:
     #   weight: 2
 
 
-taxonomies:
-  tag: "tags"
-  category: "categories"
+# taxonomies:
+#   tag: "tags"
+#   category: "categories"
 
 enableEmoji: true
 
@@ -53,7 +53,7 @@ params:
   title: "Research and Ramblings"
   description: A site for my public research and blog posts.
   # staticPath: "static/images/"  # The path to serve the static files from
-  favicon: /images/fav.png
+  favicon: "/images/fav.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
