@@ -1,6 +1,6 @@
 baseURL: "https://DylanLoader.github.io"
 languageCode: "en-us"
-title: "Hugo Profile"
+title: "Research And Ramblings"
 theme: hugo-profile
 
 Paginate: 3
@@ -11,20 +11,20 @@ markup:
       unsafe: true
 
 Menus:
-  main:
-    - identifier: blog
-      name: Blog
-      title: Blog posts
-      url: /blogs
-      weight: 1
+  # main:
+  #   - identifier: blog
+  #     name: Blog
+  #     title: Blog posts
+  #     url: content/blogs
+  #     weight: 1
 
-    - identifier: gallery
-      name: Gallery
-      title: Blog posts
-      url: /gallery
-      weight: 2
+    # - identifier: gallery
+    #   name: Gallery
+    #   title: Blog posts
+    #   url: /gallery
+    #   weight: 2
 
-    #Dropdown menu
+    # Dropdown menu
     # - identifier: dropdown
     #   title: Example dropdown menu
     #   name: Dropdown
@@ -46,7 +46,7 @@ params:
   title: "Research and Ramblings"
   description: A site for my public research and blog posts.
   # staticPath: "static/images/"  # The path to serve the static files from
-  # favicon: "static/images/fav.svg"
+  favicon: fav.svg
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -58,7 +58,7 @@ params:
 
   theme:
     disableThemeToggle: false
-    # defaultTheme: "dark" # dark
+    defaultTheme: "dark" # dark
 
   # font:
   #   fontSize: 1.5rem # default: 1rem
@@ -103,19 +103,19 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Dylan."
+    title: "Dylan"
     subtitle: "Machine Learning Research for Finance"
-    # content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
+    content: "A site to store my public research projects and an assortment of blog posts about things that interest me."
     # image: /images/hero.svg
-    button:
-      enable: false
-      name: "Resume"
-      url: "#"
-      download: true
+    # button:
+    #   enable: false
+    #   name: "Resume"
+    #   url: "#"
+    #   download: true
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
-          url: https://example.com
+          url: https://github.com/DylanLoader          
         # - icon: fab fa-twitter
         #   url: https://example.com
         - icon: fas fa-envelope
@@ -217,7 +217,7 @@ params:
           url: "https://www.macewan.ca/home/"
         date: "Graduated 2016"
         content: |-
-          Majored in Mathmatics with senior couse in Topology and Group theory. Minored in Economics. 
+          Majored in Mathmatics with senior courses in Topology and Group theory. Minored in Economics. 
 
   # Achievements
   # achievements:
@@ -297,7 +297,7 @@ params:
     btnName: Email me
 
   footer:
-    # recentPosts: false
+    recentPosts: true
     socialNetworks:
       github: https://github.com/DylanLoader
       linkedin: https://www.linkedin.com/in/dylan-loader/
