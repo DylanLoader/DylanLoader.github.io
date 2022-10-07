@@ -47,7 +47,7 @@ Menus:
 #   tag: "tags"
 #   category: "categories"
 
-enableEmoji: true
+# enableEmoji: true
 
 params:
   title: "Research and Ramblings"
