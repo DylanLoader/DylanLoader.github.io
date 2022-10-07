@@ -112,7 +112,7 @@ params:
     intro: "Hi, my name is"
     title: "Dylan"
     subtitle: "Machine Learning Research for Finance"
-    content: "A site to store my public research projects and an assortment of blog posts about things that interest me."
+    content: "A website to store my public research projects and an assortment of blog posts about things that interest me."
     # image: /images/hero.svg
     # button:
     #   enable: false
