@@ -133,8 +133,7 @@ params:
     enable: true
     title: "About Me"
     # image: "/images/me.png"
-    content: |-
-      TODO  
+    content:  
     skills:
       enable: true
       title: "Here are some of the software applications and frameworks work with or have worked with:"
